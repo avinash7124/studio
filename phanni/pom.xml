@@ -75,8 +75,13 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>${mysql.connector.version}</version>
 		</dependency>
-
-
+		
+		<!-- FreeMarker -->
+		<dependency>
+			<groupId>org.freemarker</groupId>
+			<artifactId>freemarker</artifactId>
+			<version>2.3.25-incubating</version>
+		</dependency>
 
 		<!-- Servlet+JSP+JSTL -->
 		<dependency>
@@ -128,21 +133,26 @@
 						<target>${maven.compiler.source}</target>
 					</configuration>
 				</plugin>
-
+				<plugin>
+					<artifactId>maven-dependency-plugin</artifactId>
+					<executions>
+						<execution>
+							<phase>install</phase>
+							<goals>
+								<goal>copy-dependencies</goal>
+							</goals>
+							<configuration>
+								<outputDirectory>${project.build.directory}/lib</outputDirectory>
+							</configuration>
+						</execution>
+					</executions>
+				</plugin>
 				<!-- For Maven Tomcat Plugin -->
 
-				<!-- <plugin>
-					<groupId>org.apache.tomcat.maven</groupId>
-					<artifactId>tomcat7-maven-plugin</artifactId>
-					<version>2.2</version>
-					<configuration>
-						<url>http://localhost:8080/phanni/</url>
-						<path>/${project.build.finalName}</path>
-						<server>tomcat8</server>
-						<username>tomcat</username>
-						<password>tomcat</password>
-					</configuration>
-				</plugin> -->
+				<!-- <plugin> <groupId>org.apache.tomcat.maven</groupId> <artifactId>tomcat7-maven-plugin</artifactId> 
+					<version>2.2</version> <configuration> <url>http://localhost:8080/phanni/</url> 
+					<path>/${project.build.finalName}</path> <server>tomcat8</server> <username>tomcat</username> 
+					<password>tomcat</password> </configuration> </plugin> -->
 
 				<plugin>
 					<groupId>org.apache.tomcat.maven</groupId>

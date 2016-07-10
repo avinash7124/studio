@@ -6,15 +6,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-@RequestMapping("/HelloWeb")
+@RequestMapping("/home.")
 public class Welcome {
-	
 
 	@RequestMapping(method = RequestMethod.GET)
-     public String index(ModelMap model) {
-	    System.out.println(model.getClass());
+	public String index(ModelMap model) {
+		System.out.println(model.getClass());
 
-
-         return "index.html";
-     }
+		return "index.html";
+	}
 }

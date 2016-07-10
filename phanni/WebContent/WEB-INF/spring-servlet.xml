@@ -10,8 +10,9 @@
      http://www.springframework.org/schema/mvc
      http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd">
 
+
 	<!-- Package Scan -->
-	<context:component-scan base-package="avi.studio.*"/>
+	<context:component-scan base-package="avi.studio.*" />
 
 	<!-- Enables the Spring MVC Annotation Configuration -->
 	<context:annotation-config />
@@ -26,32 +27,28 @@
 
 
 	<!-- Config Properties file -->
-	<bean id="appProperties"
-		class="org.springframework.beans.factory.config.PropertiesFactoryBean">
-		<property name="locations">
-			<list>
-				<value>classpath:ApplicationRB.properties</value>
-			</list>
+
+
+
+	<!-- freemarker config -->
+
+	<bean id="freemarkerConfig"
+		class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+		<property name="freemarkerSettings">
+			<props>
+				<prop key="incompatible_improvements">2.3.25</prop>
+				<prop key="template_exception_handler">rethrow</prop>
+				<prop key="default_encoding">UTF-8</prop>
+			</props>
 		</property>
 	</bean>
-	<bean
-		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-
-		<property name="prefix">
-			<value>/WEB-INF/ftl/</value>
-		</property>
-
-		<property name="suffix">
-			<value>.ftl</value>
-		</property>
-
-		<property name="exposedContextBeanNames">
-			<list>
-				<value>appProperties</value>
-			</list>
-		</property>
+	
+	<!-- View resolvers configured with ResourceBundles -->
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
+		<property name="cache" value="true" />
+		<property name="prefix" value="" />
+		<property name="suffix" value=".ftl" />
 	</bean>
-
-
 
 </beans>
