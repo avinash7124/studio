@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     
     <!-- Title Tag -->
+    <link rel="icon" type="image/png" href="./resource/icons/tittle.ico" />
     <title>Phanni</title>
 <!--
 
