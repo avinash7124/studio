@@ -5,21 +5,20 @@
     <meta charset="utf-8" />
     
     <!-- Title Tag -->
-    <title>November</title>
+    <title>Phanni</title>
 <!--
 
 Phanni Template
 
-http://www.templatemo.com/tm-473-november
 
 -->
     <!-- <<Mobile Viewport Code>> -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
             
     <!-- <<Attched Stylesheets>> -->
-    <link rel="stylesheet" href="css/theme.css" type="text/css" />
-    <link rel="stylesheet" href="css/media.css" type="text/css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="./resource/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="./resource/css/media.css" type="text/css" />
+    <link rel="stylesheet" href="./resource/css/font-awesome.min.css" type="text/css" />
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,600italic,400italic,800,700' rel='stylesheet' type='text/css'>    
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
 
@@ -34,7 +33,7 @@ http://www.templatemo.com/tm-473-november
         <header>
             <div class="Center">
                 <div class="site-logo">
-                	<h1><a href="#">No<span>vem</span>ber</a></h1>
+                	<h1><a href="#">PHANNI&nbsp;<span>STUDIO</span></a></h1>
                 </div>
                <div id="mobile_sec">
                <div class="mobile"><i class="fa fa-bars"></i><i class="fa fa-times"></i></div>
@@ -88,7 +87,7 @@ http://www.templatemo.com/tm-473-november
                     	<ul id="slider">	
                     		<li>
                                 <div class="Slider">
-                                    <figure><img src="img/Slider-img1.jpg" alt="image"></figure>
+                                    <figure><img src="./resource/img/Slider-img1.jpg" alt="image"></figure>
                                     <div class="text">
                                         <div class="Icon">
                                             <ul>
@@ -104,7 +103,7 @@ http://www.templatemo.com/tm-473-november
 							</li>
                     		<li>
                                 <div class="Slider">
-                                    <figure><img src="img/Slider-img2.jpg" alt="image"></figure>
+                                    <figure><img src="./resource/img/Slider-img2.jpg" alt="image"></figure>
                                     <div class="text">
                                         <div class="Icon">
                                             <ul>
@@ -119,7 +118,7 @@ http://www.templatemo.com/tm-473-november
                                 </div>
 							</li>
 						</ul>                                                            
-            	        <figure><img src="img/Shadow-img.png" alt="image" class="Shadow"></figure>                                                        
+            	        <figure><img src="./resource/img/Shadow-img.png" alt="image" class="Shadow"></figure>                                                        
                     </div>
                     <!--  // End Right Side // -->
 	            </div>
@@ -148,10 +147,10 @@ http://www.templatemo.com/tm-473-november
                         <div class="tabcontent" id="cont-1-1">
                             <div class="TabImage">
                                 <div class="img1">
-                                    <figure><img src="img/about-img2.jpg" alt="image"></figure>	
+                                    <figure><img src="./resource/img/about-img2.jpg" alt="image"></figure>	
                                 </div>
                                 <div class="img2">
-                                    <figure><img src="img/about-img1.jpg" alt="image"></figure>
+                                    <figure><img src="./resource/img/about-img1.jpg" alt="image"></figure>
                                 </div>
                             </div>
                             <div class="Description">
@@ -163,10 +162,10 @@ http://www.templatemo.com/tm-473-november
                         <div class="tabcontent hide" id="cont-2-1">
                             <div class="TabImage">
                                 <div class="img1">
-                                    <figure><img src="img/about-img2.jpg" alt="image"></figure>	
+                                    <figure><img src="./resource/img/about-img2.jpg" alt="image"></figure>	
                                 </div>
                                 <div class="img2">
-                                    <figure><img src="img/about-img1.jpg" alt="image"></figure>
+                                    <figure><img src="./resource/img/about-img1.jpg" alt="image"></figure>
                                 </div>
                             </div>
                             <div class="Description">
@@ -178,10 +177,10 @@ http://www.templatemo.com/tm-473-november
                         <div class="tabcontent hide" id="cont-3-1">
                             <div class="TabImage">
                                 <div class="img1">
-                                    <figure><img src="img/about-img2.jpg" alt="image"></figure>	
+                                    <figure><img src="./resource/img/about-img2.jpg" alt="image"></figure>	
                                 </div>
                                 <div class="img2">
-                                    <figure><img src="img/about-img1.jpg" alt="image"></figure>
+                                    <figure><img src="./resource/img/about-img1.jpg" alt="image"></figure>
                                 </div>
                             </div>
                             <div class="Description">
@@ -349,9 +348,9 @@ http://www.templatemo.com/tm-473-november
                                 <div class="clear"></div>
                                 <ul>
                                     <li><a rel="nofollow" href="http://www.facebook.com/templatemo"
-                                   target="_parent"><img src="img/facebook-icn.png" alt="image"></a></li>
-                                    <li><a href="#"><img src="img/twitter-icn.png" alt="image"></a></li>
-                                    <li><a href="#"><img src="img/google-plus-icn.png" alt="image"></a></li>
+                                   target="_parent"><img src="./resource/img/facebook-icn.png" alt="image"></a></li>
+                                    <li><a href="#"><img src="./resource/img/twitter-icn.png" alt="image"></a></li>
+                                    <li><a href="#"><img src="./resource/img/google-plus-icn.png" alt="image"></a></li>
                                 </ul>
                         </div>
                         <!-- // End Right Side // -->
@@ -383,10 +382,10 @@ http://www.templatemo.com/tm-473-november
 </div>
 
 <!-- <<Attched Javascripts>> -->
-<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="js/jquery.sudoSlider.min.js"></script>
-<script type="text/javascript" src="js/global.js"></script>
-<script type="text/javascript" src="js/modernizr.js"></script>
+<script type="text/javascript" src="./resource/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="./resource/js/jquery.sudoSlider.min.js"></script>
+<script type="text/javascript" src="./resource/js/global.js"></script>
+<script type="text/javascript" src="./resource/js/modernizr.js"></script>
 
 </body>
 </html>
