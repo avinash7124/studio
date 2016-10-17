@@ -6,18 +6,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-@RequestMapping(value = "/")
-public class Welcome {
+@RequestMapping(value = "/admin")
+public class Admin {
 
 	@RequestMapping(method = RequestMethod.GET)
 	public String index(ModelMap model) {
 		System.out.println(model.getClass());
-		return "welcome";
+		return "admin/welcome";
 	}
 
-	@RequestMapping(value = "/error", method = RequestMethod.GET)
-	public String error(ModelMap model) {
-		System.out.println(model.getClass() + " ");
-		return "main/error404";
-	}
+	
 }
