@@ -24,5 +24,13 @@
 			/WEB-INF/spring-root.xml
 		</param-value>
   </context-param>
- 
+  
+  <!-- exception-type related error pages -->
+<error-page>
+    <exception-type>
+          javax.servlet.ServletException
+    </exception-type >
+    <location>/error</location>
+</error-page>
+
 </web-app>

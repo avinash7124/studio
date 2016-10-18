@@ -1,28 +1,32 @@
 package studio.phanni.exception;
 
+import java.io.FileNotFoundException;
+
+import javax.servlet.annotation.WebServlet;
+
+import org.springframework.web.HttpRequestHandler;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+
+@ControllerAdvice
+@EnableWebMvc
 public class GenericException {
 
-	private String errCode;
-	private String errMsg;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
-	public String getErrCode() {
-		return errCode;
+	@ExceptionHandler(value = FileNotFoundException.class)
+	public ModelAndView handleAllException(HttpRequestHandler httpreq, Exception ex) {
+		System.out.println(ex.getClass() + " ");
+
+		ModelAndView model = new ModelAndView("main/error404");
+		model.addObject("errMsg", "this is Exception.class");
+		return model;
+
 	}
 
-	public void setErrCode(String errCode) {
-		this.errCode = errCode;
-	}
-
-	public String getErrMsg() {
-		return errMsg;
-	}
-
-	public void setErrMsg(String errMsg) {
-		this.errMsg = errMsg;
-	}
-
-	public GenericException(String errCode, String errMsg) {
-		this.errCode = errCode;
-		this.errMsg = errMsg;
-	}
 }

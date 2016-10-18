@@ -1,12 +1,14 @@
 package studio.phanni.controller;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-
-import studio.phanni.exception.ResourceNotFoundException;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 @RequestMapping(value = "/")
@@ -20,15 +22,9 @@ public class Welcome {
 
 	@RequestMapping(value = "/error", method = RequestMethod.GET)
 	public String error(ModelMap model) {
-		System.out.println(model.getClass() + " ");
+		System.out.println(model.getClass() + " error");
 		return "main/error404";
 	}
-
-	@ExceptionHandler(ResourceNotFoundException.class)
-	public String handleResourceNotFoundException(ModelMap model) {
-		System.out.println(model.getClass() + " ");
-		return "main/error404";
-
-	}
+	
 
 }
